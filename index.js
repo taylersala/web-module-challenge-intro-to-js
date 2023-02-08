@@ -19,7 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18
+if(votingAge > 17){
+  console.log('True')
+}
+else if (votingAge < 18){
+  console.log('False')
+}
 
 
 /*
@@ -34,6 +40,15 @@ Do the following:
    HINT: no function required
 */
 
+let boy = 'Jim';
+let favFood = 'Pizza';
+if(favFood === 'Lasagna'){
+  boy = 'John';
+}else{
+  boy = 'Jim';
+}
+
+console.log('task 1 b:', boy)
 
 
 
@@ -49,6 +64,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let birthYear = '1999'
+let num = Number(birthYear)
+console.log(num)
 
 
 
@@ -64,6 +82,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
+console.log('task 1d:', multiply(9,9))
 
 
 
