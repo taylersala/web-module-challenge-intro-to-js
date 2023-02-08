@@ -21,10 +21,10 @@ Do the following:
 */
 const votingAge = 18
 if(votingAge > 17){
-  console.log('True')
+  console.log('Task 1a:','True')
 }
 else if (votingAge < 18){
-  console.log('False')
+  console.log('Task 1a:','False')
 }
 
 
@@ -48,7 +48,7 @@ if(favFood === 'Lasagna'){
   boy = 'Jim';
 }
 
-console.log('task 1 b:', boy)
+console.log('Task 1 b:', boy)
 
 
 
@@ -66,7 +66,7 @@ Do the following:
 
 let birthYear = '1999'
 let num = Number(birthYear)
-console.log(num)
+console.log('Task 1c:', num)
 
 
 
@@ -82,7 +82,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-console.log('task 1d:', multiply(9,9))
+console.log('Task 1d:', multiply(9,9))
 
 
 
@@ -96,10 +96,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanAge){
+  return humanAge * 7;
 }
-
+console.log('Task 2:', dogYears(5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
