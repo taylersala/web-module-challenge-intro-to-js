@@ -155,10 +155,9 @@ function hungryDog(weight, age){
     return weight * .04;
   }else if (age >=1 && weight <= 11 && weight <= 15){
   return weight * .03;
-  }else if (age >= 1 && weight >= 15){
+  }else if (age >= 1 && weight > 15){
     return weight * .02;
-  }
-  if (age < 1 && age >= .583){
+  }else if (age < 1 && age >= .583){
     return weight * .04;
   }else if (age < 1 && age >= .333){
     return weight * .05;
@@ -166,7 +165,7 @@ function hungryDog(weight, age){
     return weight * .1;
   }
 }
-
+console.log('Task 3:', hungryDog(15,1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -188,9 +187,14 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-
+let compChoice = Math.random()
 function game(user, computer){
-  /*add your code here*/
+  if (compChoice >= 0 && compChoice <= .333){
+    return scissors;
+  } else if (compChoice > .333 && compChoice <= .666){
+    return rock;
+  }
+
 }
 
 
