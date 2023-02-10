@@ -187,16 +187,34 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-let compChoice = Math.random()
-function game(user, computer){
-  if (compChoice >= 0 && compChoice <= .333){
-    return scissors;
-  } else if (compChoice > .333 && compChoice <= .666){
-    return rock;
+let computer = Math.random()
+  if (computer <= .34){
+    computer = 'scissors';
+  } else if (computer <= .67){
+    computer = 'rock';
+  } else if (computer > .67){
+    computer = 'paper';
   }
 
+  function game(user, computer){
+  if (computer === user){
+  return `it's a tie`;
+  }else if (computer === 'scissors' && user === 'rock'){
+    return 'you win!';
+  }else if (computer === 'scissors' && user === 'paper'){
+    return 'you  lose!';
+  }else if (computer === 'rock' && user === 'paper'){
+    return 'you win!';
+  }else if (computer === 'rock' && user === 'scissors'){
+    return 'you lose!';
+  }else if (computer === 'paper' && user === 'rock'){
+    return 'you lose!';  
+  }else if (computer === 'paper' && user === 'scissors'){
+    return 'you win!';
+  }
 }
 
+console.log('Task 4:', game(use, computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -210,8 +228,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers, .62137 ){
+  
 }
 
 
