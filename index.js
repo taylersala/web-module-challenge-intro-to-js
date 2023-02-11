@@ -153,7 +153,7 @@ function hungryDog(weight, age){
     return weight * .05;
   }else if (age >=1 && weight >= 6 && weight <= 10){
     return weight * .04;
-  }else if (age >=1 && weight <= 11 && weight <= 15){
+  }else if (age >=1 && weight >= 11 && weight <= 15){
   return weight * .03;
   }else if (age >= 1 && weight > 15){
     return weight * .02;
@@ -202,7 +202,7 @@ let computer = Math.random()
   }else if (computer === 'scissors' && user === 'rock'){
     return 'you win!';
   }else if (computer === 'scissors' && user === 'paper'){
-    return 'you  lose!';
+    return 'you lose!';
   }else if (computer === 'rock' && user === 'paper'){
     return 'you win!';
   }else if (computer === 'rock' && user === 'scissors'){
@@ -214,7 +214,7 @@ let computer = Math.random()
   }
 }
 
-console.log('Task 4:', game(use, computer));
+console.log('Task 4:', game('paper', computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -228,9 +228,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(kilometers, .62137 ){
-  
+function miles(kilometers){
+  return kilometers * .621371;
 }
+
+console.log('Task 5a:', miles(2));
 
 
 
@@ -242,9 +244,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48
 }
+console.log('Task 5b', feet(20));
 
 
 
@@ -256,15 +259,27 @@ Using the annoyingSong function below do the following:
 1. Receive a starting number
 2. The annoying song function should return the following string exactly one time:
 
-    "{number you gave as an argument} bottles of soda on the wall, {number you gave as an argument} bottles of soda, take one down pass it around {number you gave as an argument minus 1} bottles of soda on the wall"
+    "{number you gave as an argument} bottles of soda on the wall, {number you gave as an argument} bottles of soda,
+     take one down pass it around {number you gave as an argument minus 1} bottles of soda on the wall"
 
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`
+  }
+
+// console.log('Task 6:', annoyingSong(5));
+
+
+for (let i = 5; i > 0; i--){
+  console.log(annoyingSong(i));
 }
+
+
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -282,9 +297,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(number){
+if (number >= 90){
+  return 'you got an A';
+}else if (number >= 80 && number <= 89){
+  return 'you got a B';
+}else if (number >= 70 && number <= 79){
+  return 'you got a C';
+}else if (number >= 60 && number <= 69){
+  return 'you got a D';
+}else{
+  return 'you got an F';
 }
+}
+console.log('Task 7:', grade(90));
 
 
 
@@ -301,7 +327,7 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter() {
   /*add your code here*/
 }
 
